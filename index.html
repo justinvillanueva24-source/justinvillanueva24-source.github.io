@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satoshi's Daemon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    a {
+      color: #0d6e6e;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-[#1a5f5f] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-xl font-bold tracking-wide">SATOSHI'S DAEMON</h1>
+      <nav class="flex gap-6">
+        <a href="#" class="text-white hover:text-gray-200 font-medium">Home</a>
+        <a href="#" class="text-white hover:text-gray-200 font-medium underline underline-offset-4">News</a>
+        <a href="#" class="text-white hover:text-gray-200 font-medium">Links</a>
+        <a href="#" class="text-white hover:text-gray-200 font-medium">Invest</a>
+        <a href="#" class="text-white hover:text-gray-200 font-medium">Buy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contract Address -->
+  <div class="bg-white border-b">
+    <div class="max-w-4xl mx-auto px-4 py-6">
+      <h2 class="text-[#1a5f5f] font-bold mb-3">Contract Address (CA):</h2>
+      <div class="flex items-center gap-3 bg-gray-50 border rounded px-4 py-2">
+        <code id="contract-address" class="flex-1 text-sm text-gray-700 font-mono">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</code>
+        <button onclick="copyAddress()" class="bg-[#1a5f5f] text-white px-4 py-1.5 rounded text-sm font-medium hover:bg-[#154d4d]">
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-1 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="flex gap-8">
+        <!-- Left Column -->
+        <div class="flex-1 max-w-3xl">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8">Latest Updates</h2>
+
+          <!-- Article 1 -->
+          <article class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">$DAEMON on Solana: The Legacy Reborn</h3>
+            <p class="text-gray-500 text-sm mb-4">Posted by Team — December 31, 2025</p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              We are thrilled to announce the launch of <em class="font-semibold">$DAEMON</em> — a tribute token on Solana that revives the pioneering spirit of the original <a href="#" class="text-[#0d6e6e] hover:underline">Satoshi's Daemon</a> project from the early days of Bitcoin and decentralized finance.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              $DAEMON is not just another meme coin. It is a cultural artifact rooted in crypto history: the first-ever racehorse funded via community investment on the GLBSE exchange in 2011. The original project introduced "Bitcoin Interest Rights" (BIRs)—a novel concept of shared upside without ownership—and captured the imagination of early Bitcoin adopters.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              The core team behind $DAEMON has acquired the original domain, <a href="https://satoshisdaemon.com" class="text-[#0d6e6e] hover:underline">satoshisdaemon.com</a>, securing the authentic brand and lore. This move ensures that $DAEMON is the <strong>only legitimate continuation</strong> of the Satoshi's Daemon legacy—making it <em>unvampable and uncopyable</em> in spirit and identity.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Built on Solana for speed, low fees, and true decentralization, $DAEMON honors its roots while embracing modern DeFi culture. The community is already active and growing, centered around shared values of authenticity, nostalgia, and innovation. Join the movement on <a href="#" class="text-[#0d6e6e] hover:underline">the official X Community</a>.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              The contract address is permanently set and verified:
+            </p>
+            <p class="text-gray-700 font-mono text-sm mb-4">HCBDsCcLAefSqeeY1RDgruX2ZWiLzVAGnYhDLx9hpump</p>
+            
+            <p class="text-gray-700 leading-relaxed">
+              <em class="font-semibold">$DAEMON</em> is more than a token—it's a resurrection of a crypto legend, galloping once again into the future.
+            </p>
+          </article>
+
+          <hr class="my-8 border-gray-200">
+
+          <!-- Article 2 -->
+          <article class="mb-12">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Addition of Satoshi's Daemon</h3>
+            <p class="text-gray-500 text-sm mb-4">Written by Administrator — October 2011</p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              We are excited about the addition of <a href="#" class="text-[#0d6e6e] hover:underline"><em>Satoshi's Daemon</em></a> to our racing stable.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              She is a Louisiana-bred filly by Southern States (father), who is the son of stakes-placed winner Southern Halo (her grandfather), the leading sire in Argentina seven times while siring 170 stakes winners and 19 champions.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              The dam (mother) of our new prospect is Honalua Honey, who broke her maiden on the turf with Maiden Special Weight company. She has produced four other foals of racing age, all of which became winners.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Honalua Honey's sire is <a href="#" class="text-[#0d6e6e] hover:underline"><em>Manila</em></a>, a multiple stakes winner and the 1986 Eclipse Champion Turf Male (USA), inducted into the National Museum of Racing Hall of Fame in 2008.
+            </p>
+            
+            <p class="text-gray-700 leading-relaxed">
+              <strong>Satoshi's Daemon</strong> is a versatile, well-bred prospect with a bright racing future.
+            </p>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0">
+          <div class="border-l pl-6">
+            <h4 class="text-lg font-bold text-gray-900 mb-4">Horse News</h4>
+            <ul class="space-y-2 mb-8">
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">Satoshi's Daemon Galloping</a></li>
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">Name change complete</a></li>
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">Breaking in</a></li>
+            </ul>
+            
+            <h4 class="text-lg font-bold text-gray-900 mb-4">Investor News</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">General Investing Information</a></li>
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">Dividend Schedule (TBA)</a></li>
+              <li><a href="#" class="text-[#0d6e6e] hover:underline">Signed document at GLBSE</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1a5f5f] text-white py-4">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+      Satoshi's Daemon — A race horse funded through decentralized markets (GLBSE era).
+    </div>
+  </footer>
+
+  <script>
+    function copyAddress() {
+      const address = document.getElementById('contract-address').textContent;
+      navigator.clipboard.writeText(address).then(() => {
+        alert('Contract address copied!');
+      });
+    }
+  </script>
+</body>
+</html>
